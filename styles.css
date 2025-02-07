@@ -13,13 +13,14 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 100px;
+    gap: clamp(40px,10vw,100px);
     align-items: center;
     background-image: url('images/bg-header-desktop.png');
     background-size: 100% auto;
     background-position: top;
     background-repeat: no-repeat;
     padding: 5% 0 0 0;
+    width: 100%;
 }
 h1{
     font-size: 2.5rem;
@@ -40,7 +41,7 @@ p{
     font-size: 1.2rem;
     font-weight: 400;
     color:  hsl(201, 11%, 66%);
-    width: 50%;
+    width: 60%;
     text-align: center;
 }
 .btn-container{
@@ -97,11 +98,17 @@ body div{
 .d6 h3{
     margin-top: 10px;
 }
+.d6 p{
+    width: 100%;
+}
 .d7{
     justify-content: start;
     align-items: start;
-    gap: 150px;
-    padding: 0 15%;
+    gap: 10%;
+    padding: 0 10%;
+}
+.d7 img{
+    width: 100%;
 }
 footer{
     display: flex;
@@ -138,7 +145,7 @@ footer .social-links img:hover{
     color: hsl(171, 66%, 44%);
     cursor: pointer;
 }
-@media (max-width:768px){
+@media (max-width:1024px){
     body{
         background-image: url('images/bg-header-mobile.png');
         padding: 10% 0 0 0;
