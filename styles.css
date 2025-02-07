@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Big+Shoulders+Display:wght@100..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Kumbh+Sans:wght@100..900&family=League+Spartan:wght@100..900&family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 18px;
+}
+body{
+    font-family: "Bai Jamjuree", serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    align-items: center;
+    background-image: url('images/bg-header-desktop.png');
+    background-size: 100% auto;
+    background-position: top;
+    background-repeat: no-repeat;
+    padding: 5% 0 0 0;
+}
+h1{
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-top: 20px;
+}
+h2{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 20px;
+}
+h3{
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-top: 50px;
+}
+p{
+    font-size: 1.2rem;
+    font-weight: 400;
+    color:  hsl(201, 11%, 66%);
+    width: 50%;
+    text-align: center;
+}
+.btn-container{
+    flex-direction: row;
+    margin-top: 30px;
+}
+.ios-btn ,.mac-btn{
+    padding: 20px 30px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    cursor: pointer;
+    color: white;
+}
+.ios-btn:hover ,.mac-btn:hover{
+    opacity: 0.8;
+}
+.ios-btn{
+    background-color: hsl(171, 66%, 44%);
+}
+.mac-btn{
+    background-color: hsl(233, 100%, 69%);
+}
+body div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 0 5%;
+}
+.d1,.d2,.d4,.d5,.d8,.d3 div,.d6 div{
+    flex-direction: column;
+    text-align: center;
+}
+.d3,.d6,.d7{
+    flex-direction: row;
+}
+.d3  div img{
+    width: 90%;
+}
+.d3 p{
+    text-align: start;
+}
+.d3,.d3 div{
+   justify-content: start;
+   align-items: start;
+   text-align: start;
+}
+.d4 img{
+    margin-top: 50px;
+}
+.d6 h3{
+    margin-top: 10px;
+}
+.d7{
+    justify-content: start;
+    align-items: start;
+    gap: 150px;
+    padding: 0 15%;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+    margin-top: 50px;
+    background-color:hsl(201, 11%, 66%,0.2);
+    width: 100%;
+    padding: 2% 10% 2% 15%;
+}
+footer .logo{
+    width: 50px;
+}
+footer .footer-links{
+   display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-left: 100px;
+}
+footer .footer-links a{
+    font-size: 1rem;
+    font-weight: 400;
+    color: hsl(210, 10%, 33%);
+    text-decoration: none;
+}
+footer .social-links{
+   margin-left: 50px;
+}
+footer .social-links img{
+    width: 30px;
+}
+footer .social-links img:hover{
+    color: hsl(171, 66%, 44%);
+    cursor: pointer;
+}
+@media (max-width:768px){
+    body{
+        background-image: url('images/bg-header-mobile.png');
+        padding: 10% 0 0 0;
+        text-align: center;
+        width: 100%;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    h3{
+        font-size: 1.2rem;
+    }
+    p{
+        font-size: 1rem;
+        width: 80%;
+    }
+    .btn-container{
+        flex-direction: column;
+    }
+    .ios-btn ,.mac-btn{
+        padding: 15px 20px;
+        font-size: 1rem;
+        width: 90%;
+    }
+    .d3,.d6,.d7{
+        flex-direction: column;
+    }
+    .d3 div,.d7{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .d3 p{
+        text-align: center;
+    }
+    .d4 img{
+        width: 100%;
+    }
+    .d7{
+        flex-direction: column;
+        gap: 50px;
+        padding: 0 5%;
+    }
+    footer{
+        flex-direction: column;
+        gap: 20px;
+        padding: 5% 10% 2% 5%;
+    }
+    footer .footer-links{
+        grid-template-columns: repeat(1,1fr);
+        margin-left: 0;
+    }
+    footer .social-links{
+        margin-left: 0;
+    }
+}
